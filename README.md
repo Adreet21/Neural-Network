@@ -64,8 +64,8 @@ Run the cnn.py file
 
 After successfully running the code in the terminal, there should be many lines of output.<br>
 Something similar to this "epoch 1/5 batch   1/938 loss=2.3016409873962402".
-This is just the model training itself and giving the cost function as it goes.
-Finally youll see a line like this "*** MLP1 accuracies: test 1 = 0.978 test 2 = 0.5589"
+This is just the model training itself and gives the cost function as it goes.
+Finally you will see a line like this "*** MLP1 accuracies: test 1 = 0.978 test 2 = 0.5589"
 This is the test result of the model after it has been trained.
 
 It will repeat the same thing for MLP2 and CNN, with its test results accordingly.
