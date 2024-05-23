@@ -45,8 +45,6 @@ A convolutional neural network with the following layers:
 * A layer of 10 fully-connected linear units with log-softmax activation (the output layer)
 * Output layer is 10 fully-connected log-softmax units
 
-
-
 ## Installation
 
 Make a clone of all the files in the repository.
@@ -56,19 +54,21 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install followi
 ```bash
 pip3 install --user torch torchvision 
 ```
-Make sure you are using the correct Python (ideally Python 3).<br>
+Make sure you are using the correct version of Python (ideally Python 3).<br>
 Keep all the documents in the same folder; if not, redirect them accordingly.<br>
 Run the cnn.py file
 
 ## Output
 
 After successfully running the code in the terminal, there should be many lines of output.<br>
-Something similar to this "epoch 1/5 batch   1/938 loss=2.3016409873962402".
+Something similar to this "epoch 1/5 batch   1/938 loss = 2.3016409873962402".
 This is just the model training itself and gives the cost function as it goes.
 Finally you will see a line like this "*** MLP1 accuracies: test 1 = 0.978 test 2 = 0.5589"
 This is the test result of the model after it has been trained.
 
 It will repeat the same thing for MLP2 and CNN, with its test results accordingly.
+
+After that, we can compare the accuracy of each of the models to see which one performed better.
 
 ## Not functioning?
 If you run into difficulties or errors in the code please feel free to reach out.<br>
