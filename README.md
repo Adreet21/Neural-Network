@@ -36,12 +36,12 @@ units.
 
 CNN:
 A convolutional neural network with the following layers:
-* A layer of 32 convolutional units with a kernel size of 5x5 and a stride of 1,1, with relu activation
+* A layer of 32 convolutional units with a kernel size of 5x5 and a stride of 1,1, with ReLU activation
 * A max-pooling layer with a pool size of 2x2 and a stride of 2,2.
-* A layer of 64 convolutional units with a kernel size of 5x5 and the default stride, with relu activation.
+* A layer of 64 convolutional units with a kernel size of 5x5 and the default stride, with ReLU activation.
 * A max-pooling layer with a pool size of 2x2 and the default stride.
 * A Flatten layer (to reshape the image from a 2D matrix into a single long vector)
-* A layer of 512 fully-connected linear units with relu activation
+* A layer of 512 fully-connected linear units with ReLU activation
 * A layer of 10 fully-connected linear units with log-softmax activation (the output layer)
 * Output layer is 10 fully-connected log-softmax units
 
