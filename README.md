@@ -3,7 +3,7 @@
 Given some handwritten numbers, we will try to classify each number correctly. I used Neural Netowrks to solve this; additionally, I made three different Neural Network to see which one was more accurate.
 
 ## What is a Neural Network?
-- A Neural Network comprises neurons* (Nodes) layers and is typically made of three main layers: Input, Hidden, and Output layer.
+- A Neural Network consists neuron* (Nodes) layers and is typically made of three main layers: Input, Hidden, and Output layer.
 
 - Each neuron is its own Linear Regression Model. The weight and biases of the connections between the neurons determine how much influence each input has on the output.
 
