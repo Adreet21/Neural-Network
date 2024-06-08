@@ -141,19 +141,31 @@ def main():
 
     mlp1 = MLP1().to('cpu')
     train_model(trn1, mlp1)
-    print(f"*** MLP1 accuracies: "
-          f"test 1 = {accuracy(tst1,mlp1)} test 2 = {accuracy(tst2,mlp1)}")
+    MLP1_avg = (accuracy(tst1, mlp1) + accuracy(tst2, mlp1)) / 2
+    print(f"\n*** MLP1 accuracies: "
+          f"test 1 = {accuracy(tst1,mlp1)} test 2 = {accuracy(tst2,mlp1)}\n")
 
     mlp2 = MLP2().to('cpu')
     train_model(trn1, mlp2)
-    print(f"*** MLP2 accuracies: "
-          f"test 1 = {accuracy(tst1,mlp2)} test 2 = {accuracy(tst2,mlp2)}")
+    MLP2_avg = (accuracy(tst1, mlp2) + accuracy(tst2, mlp2)) / 2
+    print(f"\n*** MLP2 accuracies: "
+          f"test 1 = {accuracy(tst1,mlp2)} test 2 = {accuracy(tst2,mlp2)}\n")
 
     cnn = CNN().to('cpu')
     train_model(trn1, cnn)
-    print(f"*** CNN accuracies: "
-          f"test 1 = {accuracy(tst1,cnn)} test 2 = {accuracy(tst2,cnn)}")
+    print(f"\n*** CNN accuracies: "
+          f"test 1 = {accuracy(tst1,cnn)} test 2 = {accuracy(tst2,cnn)}\n")
+    CNN_avg = (accuracy(tst1, cnn) + accuracy(tst2, cnn)) / 2
 
+    print(f"\nAverage accuracies: "
+            f"MLP1 = {MLP1_avg} MLP2 = {MLP2_avg} CNN = {CNN_avg}")
+    
+    if MLP1_avg > MLP2_avg and MLP1_avg > CNN_avg:
+        print("MLP1 is the winner!")
+    elif MLP2_avg > MLP1_avg and MLP2_avg > CNN_avg:
+        print("MLP2 is the winner!")
+    else:
+        print("CNN is the winner!")
 
 if __name__ == '__main__':
     main()
