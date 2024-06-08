@@ -70,6 +70,8 @@ It will repeat the same thing for MLP2 and CNN, with its test results accordingl
 
 After that, we can compare the accuracy of each of the models to see which one performed better.
 
+Demo Video: https://www.youtube.com/watch?v=JcqN9rLsN1c
+
 ## Not functioning?
 If you run into difficulties or errors in the code please feel free to reach out.<br>
 Email: contact@shahmeer.xyz
